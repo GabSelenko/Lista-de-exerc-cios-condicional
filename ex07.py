@@ -1,11 +1,13 @@
-idade = int(input("Informe sua idade: "))
-peso = int(input("Informe seu peso: "))
+idade = int(input("informe sua idade: "))
 
 if idade < 14:
-    print ("Voce nao pode andar no brinquedo! ")
-    
-elif peso > 121:
-        print ("Voce nao pode andar no brinquedo! ")
+    print("Você não pode ir no brinquedo\n")
+elif idade <= 15:
+    print("Você tem idade suficiente para usar o brinquedo!!")
 
-else:
-      print("voce nao pode andar no brinquedo")
+    peso = int(input("Informe seu peso em kg: "))
+
+    if peso < 120:
+        print('você pode ir no brinquedo')
+    else:
+        print("você não pode ir no brinquedo")
